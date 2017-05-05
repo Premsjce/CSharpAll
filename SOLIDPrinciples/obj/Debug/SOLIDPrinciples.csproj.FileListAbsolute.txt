@@ -1,0 +1,2 @@
+D:\Prem\Personel\C#\Code\SoloLearn\SOLIDPrinciples\bin\Debug\SOLIDPrinciples.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\SOLIDPrinciples\obj\Debug\SOLIDPrinciples.csprojResolveAssemblyReference.cache

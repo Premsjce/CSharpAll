@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\bin\Debug\TaskParallelLibraryDemo.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\bin\Debug\TaskParallelLibraryDemo.exe
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\bin\Debug\TaskParallelLibraryDemo.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\obj\Debug\TaskParallelLibraryDemo.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\obj\Debug\TaskParallelLibraryDemo.exe
+D:\Prem\Personel\C#\Code\SoloLearn\TaskParallelLibraryDemo\obj\Debug\TaskParallelLibraryDemo.pdb

@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\bin\Debug\AlbahariThreading.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\bin\Debug\AlbahariThreading.exe
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\bin\Debug\AlbahariThreading.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\obj\Debug\AlbahariThreading.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\obj\Debug\AlbahariThreading.exe
+D:\Prem\Personel\C#\Code\SoloLearn\AlbahariThreading\obj\Debug\AlbahariThreading.pdb

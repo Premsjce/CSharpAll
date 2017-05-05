@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\bin\Debug\Factory.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\bin\Debug\Factory.exe
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\bin\Debug\Factory.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\obj\Debug\Factory.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\obj\Debug\Factory.exe
+D:\Prem\Personel\C#\Code\SoloLearn\Factory\obj\Debug\Factory.pdb

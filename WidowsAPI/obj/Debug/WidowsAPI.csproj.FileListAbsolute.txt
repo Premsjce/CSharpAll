@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\bin\Debug\WidowsAPI.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\bin\Debug\WidowsAPI.exe
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\bin\Debug\WidowsAPI.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\obj\Debug\WidowsAPI.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\obj\Debug\WidowsAPI.exe
+D:\Prem\Personel\C#\Code\SoloLearn\WidowsAPI\obj\Debug\WidowsAPI.pdb

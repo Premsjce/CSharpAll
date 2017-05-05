@@ -1,0 +1,8 @@
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\bin\Debug\Utilities.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\bin\Debug\log4net.dll
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\bin\Debug\log4net.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\bin\Debug\log4net.xml
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\obj\Debug\Utilities.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\bin\Debug\Utilities.dll
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\Utilities\obj\Debug\Utilities.dll

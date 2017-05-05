@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\bin\Debug\AbstractFactory.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\bin\Debug\AbstractFactory.exe
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\bin\Debug\AbstractFactory.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\obj\Debug\AbstractFactory.exe
+D:\Prem\Personel\C#\Code\SoloLearn\AbstractFactory\obj\Debug\AbstractFactory.pdb

@@ -1,0 +1,17 @@
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\bin\Debug\MVVMSample.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MainWindow.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\App.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample_MarkupCompile.cache
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample_MarkupCompile.lref
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\bin\Debug\MVVMSample.exe
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\bin\Debug\MVVMSample.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\ContactView.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\ContactView.baml
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MainWindow.baml
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.g.resources
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.Properties.Resources.resources
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.csproj.GenerateResource.Cache
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.exe
+D:\Prem\Personel\C#\Code\SoloLearn\MVVMSample\obj\Debug\MVVMSample.pdb

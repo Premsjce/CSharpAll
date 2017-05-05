@@ -1,0 +1,39 @@
+﻿<Window x:Class="MVVMSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMSample"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding CurrentContact}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!--<TextBlock Grid.Row="0" Grid.Column="0" Text="Name" HorizontalAlignment="Right" Margin="5"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding FullName}" HorizontalAlignment="Right" Margin="5"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="PhoneNumber" HorizontalAlignment="Right" Margin="5"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding PhoneNumber}" HorizontalAlignment="Right" Margin="5"/>-->
+
+        <local:ContactView x:Name="ContactViewControlColumn1" Loaded="ContactViewControl_Loaded" Grid.Row="0" Grid.Column="0"/>
+        <local:ContactView x:Name="ContactViewControlColumn2" Loaded="ContactViewControl_Loaded" Grid.Row="0" Grid.Column="1"/>
+
+        <Button Grid.Column="1" Grid.Row="1" Height="20" Width="180" Click="Button_Click">
+            <Button.Content>
+                <WrapPanel>
+                    <TextBlock Text="Red" Foreground="Teal" Margin="0 0 10 0"/>
+                    <TextBlock Text="Blue" Foreground="Blue" Margin="0 0 10 0"/>
+                    <TextBlock Text="Button" Margin="0 0 10 0"/>
+                </WrapPanel>
+            </Button.Content>
+        </Button>
+    </Grid>
+</Window>

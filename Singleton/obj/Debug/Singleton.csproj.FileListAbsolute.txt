@@ -1,0 +1,6 @@
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\bin\Debug\Singleton.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\bin\Debug\Singleton.exe
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\bin\Debug\Singleton.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\obj\Debug\Singleton.csprojResolveAssemblyReference.cache
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\obj\Debug\Singleton.exe
+D:\Prem\Personel\C#\Code\SoloLearn\Singleton\obj\Debug\Singleton.pdb
