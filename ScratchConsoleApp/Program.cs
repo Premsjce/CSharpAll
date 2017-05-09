@@ -16,7 +16,7 @@ namespace ScratchConsoleApp
 
         static void Main()
         {
-            
+
             //new Thread(SaySomething).Start("I am thread 1");
             //new Thread(SaySomething).Start("I am thread 2");
             //new Thread(SaySomething).Start("I am thread 3");
@@ -24,8 +24,12 @@ namespace ScratchConsoleApp
             //_countdown.Wait();   // Blocks until Signal has been called 3 times
             //Console.WriteLine("All threads have finished speaking!");
 
-            TrapWater tp = new TrapWater();
-            Console.WriteLine("Trappedwater count is :" + tp.Trap(new int[] { 12, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1, 3, 12 }));
+            //TrapWater tp = new TrapWater();
+            //Console.WriteLine("Trappedwater count is :" + tp.Trap(new int[] { 12, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1, 3, 12 }));
+
+            //ExceptionConsolidated.CheckException();
+
+            AnonymousTypes.SampleAnonymouTypesMethod();
         }
 
         static void SaySomething(object thing)

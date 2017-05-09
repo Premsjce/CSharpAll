@@ -1,0 +1,16 @@
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\bin\Debug\DependencyPropoertyDemo.exe.config
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\bin\Debug\DependencyPropoertyDemo.exe
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\bin\Debug\DependencyPropoertyDemo.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\CustomUserControl.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\MainWindow.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\App.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo_MarkupCompile.cache
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo_MarkupCompile.lref
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\CustomUserControl.baml
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\MainWindow.baml
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo.g.resources
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo.Properties.Resources.resources
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo.csproj.GenerateResource.Cache
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo.exe
+D:\Prem\Personel\C#\Code\SoloLearn\DependencyPropoertyDemo\obj\Debug\DependencyPropoertyDemo.pdb

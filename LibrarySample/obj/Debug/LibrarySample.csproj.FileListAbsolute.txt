@@ -1,0 +1,5 @@
+D:\Prem\Personel\C#\Code\SoloLearn\LibrarySample\bin\Debug\LibrarySample.dll
+D:\Prem\Personel\C#\Code\SoloLearn\LibrarySample\bin\Debug\LibrarySample.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\LibrarySample\obj\Debug\LibrarySample.dll
+D:\Prem\Personel\C#\Code\SoloLearn\LibrarySample\obj\Debug\LibrarySample.pdb
+D:\Prem\Personel\C#\Code\SoloLearn\LibrarySample\obj\Debug\LibrarySample.csprojResolveAssemblyReference.cache

@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnonymousTypes.cs" />
+    <Compile Include="DerrivedClassFromDifferentAssembly.cs" />
+    <Compile Include="ExceptionConsolidated.cs" />
     <Compile Include="LINQSample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -52,6 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LibrarySample\LibrarySample.csproj">
+      <Project>{c064a355-0609-41c4-b86f-dfc9af77c791}</Project>
+      <Name>LibrarySample</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
