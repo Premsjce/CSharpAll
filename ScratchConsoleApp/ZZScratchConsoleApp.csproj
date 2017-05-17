@@ -7,8 +7,8 @@
     <ProjectGuid>{FB4B4F37-19D5-44B4-A290-E319188F8DDE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ScratchConsoleApp</RootNamespace>
-    <AssemblyName>ScratchConsoleApp</AssemblyName>
+    <RootNamespace>ZZScratchConsoleApp</RootNamespace>
+    <AssemblyName>ZZScratchConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
