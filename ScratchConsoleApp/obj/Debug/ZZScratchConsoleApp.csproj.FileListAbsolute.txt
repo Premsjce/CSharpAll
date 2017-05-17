@@ -1,8 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\bin\Debug\ScratchConsoleApp.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\bin\Debug\ScratchConsoleApp.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\bin\Debug\ScratchConsoleApp.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\obj\Debug\ScratchConsoleApp.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\obj\Debug\ScratchConsoleApp.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\obj\Debug\ZZScratchConsoleApp.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\bin\Debug\LibrarySample.dll
-D:\Prem\Personel\C#\Code\SoloLearn\ScratchConsoleApp\bin\Debug\LibrarySample.pdb

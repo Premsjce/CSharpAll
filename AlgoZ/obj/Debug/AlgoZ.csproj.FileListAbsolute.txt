@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\bin\Debug\AlgoZ.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\bin\Debug\AlgoZ.exe
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\bin\Debug\AlgoZ.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\obj\Debug\AlgoZ.exe
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\obj\Debug\AlgoZ.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\AlgoZ\obj\Debug\AlgoZ.csprojResolveAssemblyReference.cache

@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\bin\Debug\ElevatorSystem.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\bin\Debug\ElevatorSystem.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\bin\Debug\ElevatorSystem.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\obj\Debug\ElevatorSystem.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\obj\Debug\ElevatorSystem.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ElevatorSystem\obj\Debug\ElevatorSystem.pdb

@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\bin\Debug\Facade.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\bin\Debug\Facade.exe
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\bin\Debug\Facade.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\obj\Debug\Facade.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\obj\Debug\Facade.exe
-D:\Prem\Personel\C#\Code\SoloLearn\Facade\obj\Debug\Facade.pdb

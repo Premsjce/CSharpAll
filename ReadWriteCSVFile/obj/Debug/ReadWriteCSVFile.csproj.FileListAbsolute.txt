@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\bin\Debug\ReadWriteCSVFile.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\bin\Debug\ReadWriteCSVFile.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\bin\Debug\ReadWriteCSVFile.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\obj\Debug\ReadWriteCSVFile.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\obj\Debug\ReadWriteCSVFile.exe
-D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\obj\Debug\ReadWriteCSVFile.pdb

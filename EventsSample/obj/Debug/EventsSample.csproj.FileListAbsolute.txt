@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\bin\Debug\EventsSample.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\bin\Debug\EventsSample.exe
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\bin\Debug\EventsSample.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\obj\Debug\EventsSample.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\obj\Debug\EventsSample.exe
-D:\Prem\Personel\C#\Code\SoloLearn\EventsSample\obj\Debug\EventsSample.pdb

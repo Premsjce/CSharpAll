@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\bin\Debug\CommandPattern.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\bin\Debug\CommandPattern.exe
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\bin\Debug\CommandPattern.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\obj\Debug\CommandPattern.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\obj\Debug\CommandPattern.exe
-D:\Prem\Personel\C#\Code\SoloLearn\CommandPattern\obj\Debug\CommandPattern.pdb

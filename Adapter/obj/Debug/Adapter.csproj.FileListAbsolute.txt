@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\bin\Debug\Adapter.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\bin\Debug\Adapter.exe
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\bin\Debug\Adapter.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\obj\Debug\Adapter.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\obj\Debug\Adapter.exe
-D:\Prem\Personel\C#\Code\SoloLearn\Adapter\obj\Debug\Adapter.pdb

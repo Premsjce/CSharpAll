@@ -1,4 +1,4 @@
-[Dd]ebug/
-[Rr]elease
-[Bb]in/
-[Oo]bj/
+**/bin/Debug/
+**/bin/Release/
+**/obj/Debug/
+**/obj/Release/

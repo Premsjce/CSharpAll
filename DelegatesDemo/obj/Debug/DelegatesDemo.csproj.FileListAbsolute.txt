@@ -1,6 +1,0 @@
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\bin\Debug\DelegatesDemo.exe.config
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\bin\Debug\DelegatesDemo.exe
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\bin\Debug\DelegatesDemo.pdb
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\obj\Debug\DelegatesDemo.csprojResolveAssemblyReference.cache
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\obj\Debug\DelegatesDemo.exe
-D:\Prem\Personel\C#\Code\SoloLearn\DelegatesDemo\obj\Debug\DelegatesDemo.pdb
