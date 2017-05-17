@@ -61,6 +61,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyPropoertyDemo", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibrarySample", "LibrarySample\LibrarySample.csproj", "{C064A355-0609-41C4-B86F-DFC9AF77C791}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindingDemo", "WPFDataBindingDemo\WPFDataBindingDemo.csproj", "{1D4AFAF1-6BD6-4017-8E70-2E178569EDB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -183,6 +185,10 @@ Global
 		{C064A355-0609-41C4-B86F-DFC9AF77C791}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C064A355-0609-41C4-B86F-DFC9AF77C791}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C064A355-0609-41C4-B86F-DFC9AF77C791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D4AFAF1-6BD6-4017-8E70-2E178569EDB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D4AFAF1-6BD6-4017-8E70-2E178569EDB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D4AFAF1-6BD6-4017-8E70-2E178569EDB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D4AFAF1-6BD6-4017-8E70-2E178569EDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

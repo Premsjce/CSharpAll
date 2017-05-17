@@ -11,25 +11,57 @@ namespace AlbahariThreading
         {
 
             Thread thrd = new Thread(Go);
-            thrd.Start();
-            
+            thrd.Name = "Worker Thread";
+            //Kicking of New thread,runnig GO();
+            try
+            {
+                thrd.Start();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Exceptioin");
+            }
+
+
+            //Simultaneously doing some other things on the Main thread as the new thread "Worker Thread" is running parallelly
             Go();
-            Console.WriteLine((ThreadState.WaitSleepJoin == Thread.CurrentThread.ThreadState) ? "TRUE" : "FALSE");
+            //Console.WriteLine((ThreadState.WaitSleepJoin == Thread.CurrentThread.ThreadState) ? "TRUE" : "FALSE");
+
+            Console.ReadLine();
         }
 
         static void Go()
         {
-            lock (syncLock)
+            try
             {
-
-                Thread.Sleep(1000);
-                int val1 = 1, val2 = 1;
-
-                if (val2 != 0)
+                lock (syncLock)
                 {
-                    int result = val1 / val2;
-                    val2 = 0;
+
+                    try
+                    {
+                        //Thread.Sleep(1000);
+                        if (!done)
+                        {
+                            Console.WriteLine("Done is FALSE");
+                            done = true;
+                            throw new NullReferenceException();
+                        }
+                    }
+                    catch(Exception  ex)
+                    {
+                        Console.WriteLine("Follwing excpetion was handeled " + ex.StackTrace + "\n" + ex.Message);
+                        Console.WriteLine("Caught from Inneer mot exception block");
+                        Console.WriteLine("Rethrowing from inner exception block");
+                        throw;
+                    }
+
+
                 }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Follwing excpetion was handeled " + ex.StackTrace + "\n" + ex.Message);
             }
         }
     }

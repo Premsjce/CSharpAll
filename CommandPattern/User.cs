@@ -15,8 +15,7 @@ namespace CommandPattern
         private Calculator calculator = new Calculator();
         private List<Command> _commands = new List<Command>();
         private int _current = 0;
-
-
+ 
         public void Compute(char _operator, int operand)
         {
             Command cmnd = new CalculatorCommand(_operator, operand, calculator);
