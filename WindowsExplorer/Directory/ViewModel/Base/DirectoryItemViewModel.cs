@@ -57,7 +57,7 @@ namespace WindowsExplorer
         }
 
         /// <summary>
-        /// List of childres contained inside this item.
+        /// List of childrens contained inside this item.
         /// </summary>
         /// <value>
         /// The childrens.

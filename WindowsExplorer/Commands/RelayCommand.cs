@@ -8,7 +8,7 @@ using System.Windows.Input;
 namespace WindowsExplorer
 {
     /// <summary>
-    /// A basic command that runs on an acion
+    /// A basic command that runs on an action
     /// </summary>
     /// <seealso cref="System.Windows.Input.ICommand" />
     public class RelayCommand : ICommand

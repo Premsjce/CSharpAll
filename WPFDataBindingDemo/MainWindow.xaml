@@ -6,23 +6,75 @@
         xmlns:local="clr-namespace:WPFDataBindingDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Name="mySourceElement">
-            Hello WOrld!!!
-        </TextBox>
+    <Window.Resources>
+        <local:Employee 
 
-        <TextBlock Grid.Row="1">
-            <TextBlock.Text>
-                <Binding ElementName="mySourceElement" Path="Text"/>
-            </TextBlock.Text>
-        </TextBlock>
+        x:Key="MyEmployee" 
+            EmployeeNumber="123" 
+            FirstName="John"        
+            LastName="Doe" 
+            Department="Product Development" 
+            Title="QA Manager" />
+    </Window.Resources>
 
-        <TextBlock Grid.Row="2" Text="{Binding ElementName=mySourceElement,Path=Text}" />
-    </Grid>
+    <StackPanel Orientation="Vertical">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBox Grid.Row="0" Name="mySourceElement">
+                Hello WOrld!!!
+            </TextBox>
+
+            <TextBlock Grid.Row="1">
+                <TextBlock.Text>
+                    <Binding ElementName="mySourceElement" Path="Text"/>
+                </TextBlock.Text>
+            </TextBlock>
+
+            <TextBlock Grid.Row="2" Text="{Binding ElementName=mySourceElement,Path=Text}" />
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40px"/>
+                <RowDefinition Height="40px"/>
+                <RowDefinition  Height="*"/>
+            </Grid.RowDefinitions>
+            <Slider Name="fontSizeSlider" Grid.Row="0" Maximum="100" Value="10" Minimum="5"/>
+            <TextBox Name="SizeTextBox" Text="{Binding ElementName=fontSizeSlider, Path=Value,UpdateSourceTrigger=PropertyChanged }" Grid.Row="1"/>
+            <TextBlock Text="Example 01" FontSize="{Binding ElementName=SizeTextBox, Path=Text}"  Grid.Row="2"/>
+        </Grid>
+
+        
+        <Grid DataContext="{StaticResource MyEmployee}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="EmployeeNumber" Grid.Column="0" Grid.Row="0"/>
+            <TextBlock Text="First Name" Grid.Column="0" Grid.Row="1"/>
+            <TextBlock Text="Last Name" Grid.Column="0" Grid.Row="2"/>
+            <TextBlock Text="Title" Grid.Column="0" Grid.Row="3"/>
+            <TextBlock Text="Department" Grid.Column="0" Grid.Row="4"/>
+            
+            <TextBox Text="{Binding Path=EmployeeNumber}" Grid.Row="0" Grid.Column="1"></TextBox>
+            <TextBox Text="{Binding Path=FirstName}" Grid.Row="1" Grid.Column="1"></TextBox>
+            <TextBox Text="{Binding Path=LastName}" Grid.Row="2" Grid.Column="1"/>
+            <TextBox Text="{Binding Path=Title}" Grid.Row="3" Grid.Column="1"></TextBox>
+            <TextBox Text="{Binding Path=Department}" Grid.Row="4" Grid.Column="1"/>
+        </Grid>
+
+    </StackPanel>
 </Window>
