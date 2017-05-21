@@ -65,6 +65,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindingDemo", "WPFDa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplestMVVM2", "SimplestMVVM2\SimplestMVVM2.csproj", "{979BA56C-88FE-45AC-BE6B-719A9D5FB423}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICommandMVVMDemo", "ICommandMVVMDemo\ICommandMVVMDemo.csproj", "{00CA1103-5026-4A9C-BF90-F54AF22063E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldWCFService", "HelloWorldWCFService\HelloWorldWCFService.csproj", "{72CD5F37-E92C-4A8B-9AEA-F6B373E63E55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPatternDemo", "MediatorPatternDemo\MediatorPatternDemo.csproj", "{E36FE1F3-B061-4B07-B8C4-D1AD25A70F7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +201,18 @@ Global
 		{979BA56C-88FE-45AC-BE6B-719A9D5FB423}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979BA56C-88FE-45AC-BE6B-719A9D5FB423}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979BA56C-88FE-45AC-BE6B-719A9D5FB423}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CA1103-5026-4A9C-BF90-F54AF22063E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CA1103-5026-4A9C-BF90-F54AF22063E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CA1103-5026-4A9C-BF90-F54AF22063E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CA1103-5026-4A9C-BF90-F54AF22063E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72CD5F37-E92C-4A8B-9AEA-F6B373E63E55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72CD5F37-E92C-4A8B-9AEA-F6B373E63E55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72CD5F37-E92C-4A8B-9AEA-F6B373E63E55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72CD5F37-E92C-4A8B-9AEA-F6B373E63E55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E36FE1F3-B061-4B07-B8C4-D1AD25A70F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E36FE1F3-B061-4B07-B8C4-D1AD25A70F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E36FE1F3-B061-4B07-B8C4-D1AD25A70F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E36FE1F3-B061-4B07-B8C4-D1AD25A70F7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
