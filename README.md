@@ -10,6 +10,8 @@ Topics Covered :
 6. MVVM Sample Project
 7. SOLID Principles Demo
 8. TPL Sample Project
+9. WPF Data Binding
+10. WPF Window Explorer Sample Project using MVVM
 etc etc
 
 More topics will keep adding
