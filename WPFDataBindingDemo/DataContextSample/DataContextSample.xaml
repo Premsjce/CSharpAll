@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFDataBindingDemo.DataContextSample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFDataBindingDemo"
+        mc:Ignorable="d"
+        Title="DataContextSample" Height="300" Width="300">
+
+    <StackPanel Margin="10">
+        <WrapPanel Margin="10">
+            <TextBlock Name="txtBlock" Text="Window title.." Margin="5"/>
+            <TextBox Name="txtWindowTitle" Text="{Binding Title, UpdateSourceTrigger=Explicit}" Width="120"/>
+            <Button Content=" * " Click="Button_Click" Width="25" Margin="5,0,0,0"/>
+        </WrapPanel>
+        <WrapPanel Margin="0,10,0,0">
+            <TextBlock Text="Windows Dimensions : "/>
+            <TextBox Text="{Binding Width, UpdateSourceTrigger=LostFocus}" Width="50"/>
+            <TextBlock Text=" X "/>
+            <TextBox Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Width="50"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>
