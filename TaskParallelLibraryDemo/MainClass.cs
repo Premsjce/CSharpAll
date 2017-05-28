@@ -23,8 +23,10 @@ namespace TaskParallelLibraryDemo
             //HandlingExceptions.HandledExceptionsMethod();
             //CancellingTasks.CancellingSingleTask();
             //CancellingTasks.CancellingOneOfSeveralTasks();
-            
 
+
+            //AsyncAwaitSample
+            AsyncAwaitSample.MyMethodAsync();
 
             Console.WriteLine("Thats it buddy. You're up now");
             Console.ReadLine();

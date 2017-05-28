@@ -7,7 +7,7 @@ namespace AlbahariThreading
     {
         static bool done;
         static readonly object syncLock = new object();
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
 
             Thread thrd = new Thread(Go);

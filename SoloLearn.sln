@@ -73,6 +73,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatorPatternDemo", "Medi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentInterfaceCode", "FluentInterfaceCode\FluentInterfaceCode.csproj", "{2FC566FE-CD44-4999-81F2-446AA0335F73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitSampleDemo", "AsyncAwaitSampleDemo\AsyncAwaitSampleDemo.csproj", "{FF222533-CC48-422E-BC37-A83A66626FCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationAndDeserializationDemo", "SerializationAndDeserializationDemo\SerializationAndDeserializationDemo.csproj", "{6D088A08-5B79-4789-8C6B-F52A2B8CF987}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +223,14 @@ Global
 		{2FC566FE-CD44-4999-81F2-446AA0335F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC566FE-CD44-4999-81F2-446AA0335F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC566FE-CD44-4999-81F2-446AA0335F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF222533-CC48-422E-BC37-A83A66626FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF222533-CC48-422E-BC37-A83A66626FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF222533-CC48-422E-BC37-A83A66626FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF222533-CC48-422E-BC37-A83A66626FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

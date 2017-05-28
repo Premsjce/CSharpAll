@@ -43,8 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackgroundWorkerSample.cs" />
     <Compile Include="Chapter1.cs" />
+    <Compile Include="CountDownEventSample.cs" />
+    <Compile Include="EventWaitHandleSample.cs" />
+    <Compile Include="MainMethod.cs" />
+    <Compile Include="ManualResetEventSample.cs" />
+    <Compile Include="ProducerConsumerQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReaderWriteLockSample.cs" />
+    <Compile Include="SynchronozationContextSample.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

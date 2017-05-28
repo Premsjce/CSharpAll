@@ -29,7 +29,10 @@ namespace ScratchConsoleApp
 
             //ExceptionConsolidated.CheckException();
 
-            AnonymousTypes.SampleAnonymouTypesMethod();
+            //AnonymousTypes.SampleAnonymouTypesMethod();
+
+            Program p = new Program();
+            p.SamplePublicMethod1();
         }
 
         static void SaySomething(object thing)
@@ -40,7 +43,17 @@ namespace ScratchConsoleApp
             _countdown.Signal();
         }
 
+        public void SamplePublicMethod1()
+        {
+            //do nohting
+            //SamplePublicMethod1();
+        }
 
+        public void SamplePublicMethod2()
+        {
+            //do nohting
+            //SamplePublicMethod2();
+        }
 
     }
 }
