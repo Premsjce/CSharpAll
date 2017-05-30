@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncAwaitSampleDemo", "Asy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializationAndDeserializationDemo", "SerializationAndDeserializationDemo\SerializationAndDeserializationDemo.csproj", "{6D088A08-5B79-4789-8C6B-F52A2B8CF987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesEventTogether", "DelegatesEventTogether\DelegatesEventTogether.csproj", "{657D0867-9F5A-40AF-ADED-83167CA8EFA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -231,6 +233,10 @@ Global
 		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D088A08-5B79-4789-8C6B-F52A2B8CF987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{657D0867-9F5A-40AF-ADED-83167CA8EFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{657D0867-9F5A-40AF-ADED-83167CA8EFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{657D0867-9F5A-40AF-ADED-83167CA8EFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{657D0867-9F5A-40AF-ADED-83167CA8EFA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
