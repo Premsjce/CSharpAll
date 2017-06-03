@@ -27,7 +27,9 @@ namespace TaskParallelLibraryDemo
         {
             return Task.Run<string>(() =>
            {
-               return Greetings(name);
+               Thread.Sleep(3000); //Simulating some work is being done
+               return "Hello from : " + name;
+               //return Greetings(name); //Just another method to call from Task. call only when more line of code is present
            });
         }
     }

@@ -9,6 +9,7 @@ namespace TaskParallelLibraryDemo
 {
     public class HandlingExceptions
     {
+        #region UnHandeled Exception(i.e Handling without Try/Catch block)
         public static void UnHandledExceptionMethod()
         {
             List<int> listIntegers = new List<int>();
@@ -69,6 +70,9 @@ namespace TaskParallelLibraryDemo
 
         }
 
+        #endregion
+
+        #region Handeling Exception gracefully
         public static void HandledExceptionsMethod()
         {
             List<int> listIntegers = new List<int>();
@@ -116,7 +120,7 @@ namespace TaskParallelLibraryDemo
             }
 
         }
+        #endregion
 
-      
     }
 }

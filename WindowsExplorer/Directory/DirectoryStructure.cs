@@ -9,6 +9,8 @@ namespace WindowsExplorer
 {
     public static class DirectoryStructure
     {
+        #region Static Methods
+        
         /// <summary>
         /// Gets all the logical drives.
         /// </summary>
@@ -50,7 +52,14 @@ namespace WindowsExplorer
             {
                 var dirs = Directory.GetDirectories(fullPath);
                 if (dirs.Length > 0)
-                    directories.AddRange(dirs.Select(folder => new DiretoryItem() { FullPath = folder, Type = DirectoryItemType.FOLDER }));
+                {
+                    directories.AddRange(dirs.Select(
+                        folder => new DiretoryItem()
+                                    {
+                                        FullPath = folder,
+                                        Type = DirectoryItemType.FOLDER
+                                    }));
+                }
             }
             catch
             {
@@ -65,7 +74,12 @@ namespace WindowsExplorer
             {
                 var files = Directory.GetFiles(fullPath);
                 if (files.Length > 0)
-                    directories.AddRange(files.Select(file => new DiretoryItem() { FullPath = file, Type = DirectoryItemType.FILE }));
+                    directories.AddRange(files.Select(
+                        file => new DiretoryItem()
+                        {
+                            FullPath = file,
+                            Type = DirectoryItemType.FILE
+                        }));
             }
             catch
             {
@@ -75,6 +89,7 @@ namespace WindowsExplorer
 
             return directories;
         }
+        #endregion
 
         #region Helper
         //Find the file or folder Name from Full Path   

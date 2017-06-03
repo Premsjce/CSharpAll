@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
 
-    <StackPanel Name="StckPanel" Height="Auto" Width="Auto">
+    <!--<StackPanel Name="StckPanel" Height="Auto" Width="Auto">-->
         <Grid Height="Auto" Width="Auto">
             <local:UserControl1/>
         </Grid>
         <!--<Grid Height="150" Width="400">
             <MediaElement Source="C:\Users\Public\Videos\Sample Videos\Wildlife.wmv"/>
         </Grid>-->
-        <StackPanel Height="150" Width="200">
+        <!--<StackPanel Height="150" Width="200">
             <Button Name="abisdns">
                 <ControlTemplate TargetType="Button">
                     <Border BorderThickness="1">
@@ -22,8 +22,8 @@
                     </Border>
                 </ControlTemplate>
             </Button>
-        </StackPanel>
-    </StackPanel>
+        </StackPanel>-->
+    <!--</StackPanel>-->
 
 
 

@@ -30,7 +30,7 @@ namespace MVVMSample
             ContactViewModel _contactvm = new ContactViewModel();
             _contactvm.LoadCotacts();
             ContactViewControlColumn1.DataContext = _contactvm;
-            ContactViewControlColumn2.DataContext = _contactvm;
+            //ContactViewControlColumn2.DataContext = _contactvm;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

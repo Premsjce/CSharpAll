@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ScratchConsoleApp
 {
+    /// <summary>
+    /// Student Class
+    /// </summary>
     public class Student
     {
         public string FirstName { get; set; }
@@ -13,9 +16,12 @@ namespace ScratchConsoleApp
         public int Age { get; set; }
     }
 
+    /// <summary>
+    /// LINQ Sample Class
+    /// </summary>
     class LINQSample
     {
-
+        #region Sample Method1
         public static void SampleMthod()
         {
             //Creating the Data set
@@ -46,5 +52,21 @@ namespace ScratchConsoleApp
                 }
             }
         }
+        #endregion
+
+        #region SampleMethod2
+
+        public static void SampleMethod2()
+        {
+            string[] stringArray = new string[] { "tata", "bata", "birla", "ambani" };
+
+            var result = stringArray.Select((S) => S + "addeedbaba");
+
+            foreach(var str in result)
+            {
+                Console.WriteLine(str);
+            }
+        }
+        #endregion
     }
 }

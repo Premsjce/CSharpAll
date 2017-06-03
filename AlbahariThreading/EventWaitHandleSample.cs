@@ -16,17 +16,18 @@ namespace AlbahariThreading
         static readonly object syncLock = new object();
         static string _message;
 
-        static void Main1(string[]  args)
+        static void Main1(string[] args)
         {
             using (ProducerConsumerQueue q = new ProducerConsumerQueue())
             {
                 q.EnqueTask("Hello");
-                for (int i = 0; i < 5; i++) q.EnqueTask("Say " + i);
+                for (int i = 0; i < 5; i++)
+                    q.EnqueTask("Say " + i);
                 q.EnqueTask("Goodbye!");
             }
 
 
-            /*
+
             Thread workerThread = new Thread(WorkerMethod);
             workerThread.Start();
 
@@ -35,7 +36,7 @@ namespace AlbahariThreading
             {
                 _message = "going to get changed in worker Method during call 1";
             }
-            
+
             _fromWorker.Set();
 
             _fromMain.WaitOne();
@@ -43,7 +44,7 @@ namespace AlbahariThreading
             {
                 _message = "going to get changed in worker Method during call 2";
             }
-            
+
             _fromWorker.Set();
             _fromMain.WaitOne();
             lock (syncLock)
@@ -64,16 +65,16 @@ namespace AlbahariThreading
             new Thread(Waiter3).Start();
             Thread.Sleep(6000);
             waitHandle.Set();
-            waitHandle.Close(); */
+            waitHandle.Close();
         }
 
         static void WorkerMethod()
         {
-            while(true)
+            while (true)
             {
                 _fromMain.Set();
                 _fromWorker.WaitOne();
-                lock(syncLock)
+                lock (syncLock)
                 {
                     if (_message == null)
                         return;

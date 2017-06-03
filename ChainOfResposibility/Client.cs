@@ -10,11 +10,13 @@ namespace ChainOfResposibility
     {
         static void Main(string[] args)
         {
+            Developer developer = new Developer();
             TeamLeader teamLead = new TeamLeader();
             ProjectLeader projectLead = new ProjectLeader();
             HR hr = new HR();
 
             //Creating object chain
+            //developer.Successor = teamLead;
             teamLead.Successor = projectLead;
             projectLead.Successor = hr;
 

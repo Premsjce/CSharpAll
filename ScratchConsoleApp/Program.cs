@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,30 +11,66 @@ using System.Windows.Controls;
 namespace ScratchConsoleApp
 {
 
-    class Program
+    /// <summary>
+    /// Main class which has an Entry point for this Console Application
+    /// </summary>
+    public class Program
     {
-        static CountdownEvent _countdown = new CountdownEvent(3);
+        
+        #region Main Method
 
         static void Main()
         {
+            #region Checking collections and Generics
+            IList<int> list = new List<int>();
+            list.Add(100);
 
-            //new Thread(SaySomething).Start("I am thread 1");
-            //new Thread(SaySomething).Start("I am thread 2");
-            //new Thread(SaySomething).Start("I am thread 3");
+            List<string> listString = new List<string>(6);
+            listString.Add("1");
 
-            //_countdown.Wait();   // Blocks until Signal has been called 3 times
-            //Console.WriteLine("All threads have finished speaking!");
+            #endregion
 
-            //TrapWater tp = new TrapWater();
-            //Console.WriteLine("Trappedwater count is :" + tp.Trap(new int[] { 12, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1, 3, 12 }));
+            #region LINQ sample
+            LINQSample.SampleMethod2();
+            #endregion
 
-            //ExceptionConsolidated.CheckException();
+            #region Countdown waitHandle
 
-            //AnonymousTypes.SampleAnonymouTypesMethod();
+            new Thread(SaySomething).Start("I am thread 1");
+            new Thread(SaySomething).Start("I am thread 2");
+            new Thread(SaySomething).Start("I am thread 3");
 
+            _countdown.Wait();   // Blocks until Signal has been called 3 times
+            Console.WriteLine("All threads have finished speaking!");
+            #endregion
+
+            #region TrapWater Example
+
+            TrapWater tp = new TrapWater();
+            Console.WriteLine("Trappedwater count is :" + tp.Trap(new int[] { 12, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1, 3, 12 }));
+
+            #endregion
+
+            #region Consolidate Excpetion Handling
+            
+            ExceptionConsolidated.CheckException();
+            #endregion
+
+            #region Anonymous Method            
+            AnonymousTypes.SampleAnonymouTypesMethod();
+            #endregion
+
+            #region Program Class Instance Creation
             Program p = new Program();
             p.SamplePublicMethod1();
+            #endregion
+
+ 
+
         }
+        #endregion
+
+        #region Static Method
 
         static void SaySomething(object thing)
         {
@@ -43,10 +80,13 @@ namespace ScratchConsoleApp
             _countdown.Signal();
         }
 
+        #endregion
+
+        #region Public Methods
+        
         public void SamplePublicMethod1()
         {
-            //do nohting
-            //SamplePublicMethod1();
+            SamplePublicMethod2();
         }
 
         public void SamplePublicMethod2()
@@ -55,5 +95,10 @@ namespace ScratchConsoleApp
             //SamplePublicMethod2();
         }
 
+        #endregion
+
+        #region Static Members
+        static CountdownEvent _countdown = new CountdownEvent(3);
+        #endregion
     }
 }

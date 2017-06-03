@@ -13,7 +13,7 @@ namespace AlbahariThreading
         static Random random = new Random();
 
 
-        static void Main(string [] args)
+        static void MainReaderWriter(string [] args)
         {
             Thread thread1 = new Thread(Read);
             Thread thread2 = new Thread(Read);

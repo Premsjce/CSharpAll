@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ChainOfResposibility
 {
+
+    /// <summary>
+    /// Base Abstract class all the Object in chani must implement
+    /// </summary>
     public abstract class Employee
     {
         public abstract void ApproveLeave(Leave leave);
@@ -14,6 +18,7 @@ namespace ChainOfResposibility
 
         public event OnLeaveAppliedEventHandler OnLeaveApliedEvent;
 
+        //public event EventHandler<LeaveAppliedEventArgs> OnLeaveApliedEvent;
 
         public void OnLeaveApplied(Employee emp, Leave leave)
         {

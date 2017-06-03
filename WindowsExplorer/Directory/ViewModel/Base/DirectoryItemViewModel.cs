@@ -108,11 +108,11 @@ namespace WindowsExplorer
         public ICommand ExpandCommand { get; set; }
         #endregion
 
-        #region Helper Methods
+        #region Collapse Method
 
         /// <summary>
         /// Collapses the items and clears all the children items.
-        /// Adding a dummy item to show the expanded iconif required
+        /// Adding a dummy item to show the expanded icon if required
         /// </summary>
         /// <exception cref="System.NotImplementedException"></exception>
         private void Collapse()
@@ -138,16 +138,18 @@ namespace WindowsExplorer
             if (this.Type == DirectoryItemType.FILE)
                 return;
 
-            //Find all childers
+            //Find all childrens
             //Solution 1
-            //var childrens = new ObservableCollection<DirectoryItemViewModel>();
-            //List<DiretoryItem> items = DirectoryStructure.GetDirectoryContents(this.FullPath);
-            //ObservableCollection<DirectoryItemViewModel> collection = new ObservableCollection<DirectoryItemViewModel>();
-            //collection = items.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)) as ObservableCollection<DirectoryItemViewModel>;
-            //this.Childrens = collection;
+            ObservableCollection<DirectoryItemViewModel> childrens = new ObservableCollection<DirectoryItemViewModel>();
+            List<DiretoryItem> items = DirectoryStructure.GetDirectoryContents(this.FullPath);
+            ObservableCollection<DirectoryItemViewModel> grandChildren= new ObservableCollection<DirectoryItemViewModel>();
+            grandChildren = items.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)) as ObservableCollection<DirectoryItemViewModel>;
+            this.Childrens = grandChildren;
 
             //Solution 2
-            //this.Childrens = new ObservableCollection<DirectoryItemViewModel>(DirectoryStructure.GetDirectoryContents(FullPath).Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
+            this.Childrens = new ObservableCollection<DirectoryItemViewModel>
+                (DirectoryStructure.GetDirectoryContents(FullPath).Select
+                (content => new DirectoryItemViewModel(content.FullPath, content.Type)));
 
             //Solution3
             var children = DirectoryStructure.GetDirectoryContents(this.FullPath);
@@ -155,8 +157,6 @@ namespace WindowsExplorer
                                 children.Select(content => new DirectoryItemViewModel(content.FullPath, content.Type)));
         }
         #endregion
-
-
 
     }
 }

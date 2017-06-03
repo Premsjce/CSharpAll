@@ -19,7 +19,7 @@ namespace WindowsExplorer
         
         #endregion
 
-        #region COnstructor
+        #region Constructor
         public DirectoryStructureViewModel()
         {
             //Get the logical drives

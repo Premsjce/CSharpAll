@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Client.cs" />
+    <Compile Include="Developer.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="HR.cs" />
     <Compile Include="Leave.cs" />
+    <Compile Include="LeaveAppliedEventArgs.cs" />
     <Compile Include="ProjectLeader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamLeader.cs" />

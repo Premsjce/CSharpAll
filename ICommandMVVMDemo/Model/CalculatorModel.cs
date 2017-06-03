@@ -8,6 +8,8 @@ namespace ICommandMVVMDemo.Model
 {
     public class CalculatorModel
     {
+        #region Constructor(s)
+        
         public CalculatorModel()
         {
             //Default values
@@ -15,11 +17,18 @@ namespace ICommandMVVMDemo.Model
             SecondNumber = 20;
             OutputNumber = 0;
         }
+        #endregion
 
+        #region Propertie(s)
+        
         public int FirstNumber { get; set; }
         public int SecondNumber { get; set; }
         public int OutputNumber { get; set; }
 
+        #endregion
+
+        #region Unwanted Public Method(s)
+        
         public int Add(int first, int second)
         {
             return first + second;
@@ -39,5 +48,6 @@ namespace ICommandMVVMDemo.Model
         {
             return first / second;
         }
+        #endregion
     }
 }

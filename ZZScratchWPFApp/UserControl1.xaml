@@ -6,54 +6,73 @@
              xmlns:local="clr-namespace:ZZScratchWPFApp"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background = "AntiqueWhite">
-        <Grid.RowDefinitions>
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
-            <RowDefinition Height = "*" />
+    <Grid Name="MianView">
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width = "*" />
-        </Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>-->
 
-        <Label Content = "Employee Info" FontSize = "15"
+        <Grid Background = "AntiqueWhite" Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+                <RowDefinition Height = "*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Content = "Employee Info" FontSize = "15"
          FontWeight = "Bold" Grid.Column = "0" Grid.Row = "0"/>
 
-        <StackPanel Grid.Column = "0" Grid.Row = "1" Orientation = "Horizontal">
-            <Label Content = "_Name"  VerticalAlignment = "Center" Width = "70"/>
-            <TextBox Name = "txtName" Text = "{Binding Name}" VerticalAlignment = "Center"
+            <StackPanel Grid.Column = "0" Grid.Row = "1" Orientation = "Horizontal">
+                <Label Content = "_Name"  VerticalAlignment = "Center" Width = "70"/>
+                <TextBox Name = "txtName" Text = "{Binding Name}" VerticalAlignment = "Center"
             Width = "200">
-            </TextBox>
-        </StackPanel>
+                </TextBox>
+            </StackPanel>
 
-        <StackPanel Grid.Column = "0" Grid.Row = "2" Orientation = "Horizontal">
-            <Label Content = "ID" VerticalAlignment = "Center" Width = "70"/>
-            <TextBox Name = "txtCity" Text = "{Binding ID}" VerticalAlignment = "Center"
+            <StackPanel Grid.Column = "0" Grid.Row = "2" Orientation = "Horizontal">
+                <Label Content = "ID" VerticalAlignment = "Center" Width = "70"/>
+                <TextBox Name = "txtCity" Text = "{Binding ID}" VerticalAlignment = "Center"
             Width = "Auto" MinWidth="50">
-            </TextBox>
-        </StackPanel>
+                </TextBox>
+            </StackPanel>
 
-        <StackPanel Grid.Column = "0" Grid.Row = "3" Orientation = "Horizontal">
-            <Label Content = "_Age" VerticalAlignment = "Center" Width = "70"/>
-            <TextBox Name = "txtState" Text = "{Binding Age}" VerticalAlignment = "Center"
+            <StackPanel Grid.Column = "0" Grid.Row = "3" Orientation = "Horizontal">
+                <Label Content = "_Age" VerticalAlignment = "Center" Width = "70"/>
+                <TextBox Name = "txtState" Text = "{Binding Age}" VerticalAlignment = "Center"
             Width = "50"></TextBox>
-        </StackPanel>
+            </StackPanel>
 
-        <StackPanel Grid.Column = "0" Grid.Row = "4" Orientation = "Horizontal">
-            <Label Content = "Title" VerticalAlignment = "Center" Width = "70"/>
-            <TextBox Name = "txtCountry" Text = "{Binding Title}" VerticalAlignment = "Center"
+            <StackPanel Grid.Column = "0" Grid.Row = "4" Orientation = "Horizontal">
+                <Label Content = "Title" VerticalAlignment = "Center" Width = "70"/>
+                <TextBox Name = "txtCountry" Text = "{Binding Title}" VerticalAlignment = "Center"
             Width = "200"></TextBox>
-        </StackPanel>
+            </StackPanel>
 
-        <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" >
-            <Border Name="ButtonBorder">
-                <Button Name="btnEmployee" Click="btnFirst_Click" Height="25" Width="100" Content="Click to update" />
-            </Border>
-        </StackPanel>
+            <StackPanel Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <Border Name="ButtonBorder">
+                    <Button Name="btnEmployee" Click="btnFirst_Click" Height="25" Width="100" Content="Click to update" />
+                </Border>
+            </StackPanel>
+        </Grid>
 
+        <!--<Grid Name="CustomControlGrid" Background="Teal" Grid.Row="0" Grid.Column="1">-->
+            <!--<ZZScratchWPFApp:CustomControlsSample
+                Width="200"
+                Height="200"
+                Background="Yellow"
+                BorderBrush="Red"
+                BorderThickness="1"/>-->
+        <!--</Grid>-->
     </Grid>
 </UserControl>

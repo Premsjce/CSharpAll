@@ -12,29 +12,32 @@ namespace SerializationAndDeserializationDemo
 {
     class MainClass
     {
+        #region Main Method
+        
         static void Main(string[] args)
         {
 
             #region XMLSerialization Code
 
-            //AddressDetails addressDetails1 = new AddressDetails()
-            //{
-            //    Name = "Narendra Modi",
-            //    HouseNo = 606,
-            //    StreetName = "RCR",
-            //    City = "Delhi",
-            //    PoAddress = "India-000001"
-            //};
+            AddressDetails addressDetails1 = new AddressDetails()
+            {
+                Name = "Narendra Modi",
+                HouseNo = 606,
+                StreetName = "RCR",
+                City = "Delhi",
+                PoAddress = "India-000001"
+            };
 
+            string temp =  addressDetails1.SampleMethod("abracadabra");
 
-            //List<AddressDetails> addressList = new List<AddressDetails>();
-            //addressList.Add(addressDetails1);
-            //addressList.Add(new AddressDetails() { Name = "A", HouseNo = 1, StreetName = "ABC", City = "LALA", PoAddress = "BABA" });
-            //addressList.Add(new AddressDetails() { Name = "B", HouseNo = 2, StreetName = "BCD", City = "BALA", PoAddress = "RABA" });
-            //addressList.Add(new AddressDetails() { Name = "C", HouseNo = 3, StreetName = "DEF", City = "VALA", PoAddress = "DABA" });
-            //addressList.Add(new AddressDetails() { Name = "D", HouseNo = 4, StreetName = "EFG", City = "CALA", PoAddress = "LABA" });
+            List<AddressDetails> addressList = new List<AddressDetails>();
+            addressList.Add(addressDetails1);
+            addressList.Add(new AddressDetails() { Name = "A", HouseNo = 1, StreetName = "ABC", City = "LALA", PoAddress = "BABA" });
+            addressList.Add(new AddressDetails() { Name = "B", HouseNo = 2, StreetName = "BCD", City = "BALA", PoAddress = "RABA" });
+            addressList.Add(new AddressDetails() { Name = "C", HouseNo = 3, StreetName = "DEF", City = "VALA", PoAddress = "DABA" });
+            addressList.Add(new AddressDetails() { Name = "D", HouseNo = 4, StreetName = "EFG", City = "CALA", PoAddress = "LABA" });
 
-            //Serializer(addressList);
+            Serializer(addressList);
             #endregion
 
             #region XMLDeserialization Code
@@ -79,25 +82,26 @@ namespace SerializationAndDeserializationDemo
 
             #region BinaryDeSerialization Code
 
-            List<AddressDetails> listOfAddress;
-            using (Stream stream = new FileStream(@"C:\temp\BinarySerialiaation.txt", FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                IFormatter formater = new BinaryFormatter();
-                listOfAddress = formater.Deserialize(stream) as List<AddressDetails>;
+            //List<AddressDetails> listOfAddress;
+            //using (Stream stream = new FileStream(@"C:\temp\BinarySerialiaation.txt", FileMode.Open, FileAccess.Read, FileShare.Read))
+            //{
+            //    IFormatter formater = new BinaryFormatter();
+            //    listOfAddress = formater.Deserialize(stream) as List<AddressDetails>;
 
-            }
+            //}
 
-            foreach (AddressDetails address in listOfAddress)
-            {
-                Console.WriteLine("Name     : {0}", address.Name);
-                Console.WriteLine("House No : {0}", address.HouseNo);
-                Console.WriteLine("Street   : {0}", address.StreetName);
-                Console.WriteLine("City     : {0}", address.City);
-                Console.WriteLine("Postal   : {0}", address.PoAddress);
-            }
+            //foreach (AddressDetails address in listOfAddress)
+            //{
+            //    Console.WriteLine("Name     : {0}", address.Name);
+            //    Console.WriteLine("House No : {0}", address.HouseNo);
+            //    Console.WriteLine("Street   : {0}", address.StreetName);
+            //    Console.WriteLine("City     : {0}", address.City);
+            //    Console.WriteLine("Postal   : {0}", address.PoAddress);
+            //}
             #endregion
 
         }
+        #endregion
 
         #region Serializer
 

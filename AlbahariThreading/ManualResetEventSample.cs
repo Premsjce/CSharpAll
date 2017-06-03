@@ -11,7 +11,7 @@ namespace AlbahariThreading
     {
         static ManualResetEvent _waitHandle = new ManualResetEvent(false);
 
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             Thread _workerThread1 = new Thread(HelperMethod1);
             Thread _workerThread2 = new Thread(HelperMethod2);
@@ -22,7 +22,6 @@ namespace AlbahariThreading
             _waitHandle.Reset();
 
             Thread.Sleep(2000);
-
             _waitHandle.Set();
 
         }
@@ -31,7 +30,7 @@ namespace AlbahariThreading
         {
             Console.WriteLine("In helper Methid 1.. Waiitng");
             _waitHandle.WaitOne();
-            //Thread.Sleep(2000);
+            Thread.Sleep(2000);
             Console.WriteLine("In helper Methid 1.. Waiting finsihed");
             
 
@@ -41,7 +40,7 @@ namespace AlbahariThreading
         {
             Console.WriteLine("In helper Methid 2.. Waiting");
             _waitHandle.WaitOne();
-            //Thread.Sleep(2000);
+            Thread.Sleep(2000);
             Console.WriteLine("In helper Methid 2.. Waiting finsihed");
         }
     }

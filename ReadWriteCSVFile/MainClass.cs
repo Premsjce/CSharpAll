@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 
 namespace ReadWriteCSVFile
@@ -9,27 +10,56 @@ namespace ReadWriteCSVFile
     {
         static void Main(string[] args)
         {
-            StreamReader strmReader = new StreamReader(@"D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\inventory.txt");
-            string linea = strmReader.ReadLine();
-
-            string[] allLine = File.ReadAllLines(@"D:\Prem\Personel\C#\Code\SoloLearn\ReadWriteCSVFile\inventory.txt");
+            string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            string path = directory + @"\..\..\inventory.txt";
+            List<string> listOfString = new List<string>();
             List<InventoryModel> inventoryModel = new List<InventoryModel>();
             InventoryModel model;
 
-
-            while (linea != null)
+            using (StreamReader reader = new StreamReader(path))
             {
-                //Console.WriteLine(linea);
-                model = new InventoryModel();
-                string[] item = linea.Split(',');
-                model.Category = item[0].Trim();
-                model.Name = item[1].Trim();
-                model.CostPerUnit = float.Parse(item[2]);
-                model.AvailableQty = int.Parse(item[3]);
-                inventoryModel.Add(model);
-                linea = strmReader.ReadLine();
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    listOfString.Add(line);
+                    model = new InventoryModel();
+                    string[] item = line.Split(',');
+                    model.Category = item[0].Trim();
+                    model.Name = item[1].Trim();
+                    model.CostPerUnit = float.Parse(item[2]);
+                    model.AvailableQty = int.Parse(item[3]);
+                    inventoryModel.Add(model);
+                }
             }
-            strmReader.Close();
+
+
+
+            //string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            //string pathToFile = directory + @"\..\..\inventory.txt";
+
+            //StreamReader strmReader = new StreamReader(pathToFile);
+
+            //string linea = strmReader.ReadToEnd();
+            
+            
+            //string[] allLine = File.ReadAllLines(pathToFile);
+            ////List<InventoryModel> inventoryModel = new List<InventoryModel>();
+            ////InventoryModel model;
+
+
+            //while (linea != null)
+            //{
+            //    //Console.WriteLine(linea);
+            //    model = new InventoryModel();
+            //    string[] item = linea.Split(',');
+            //    model.Category = item[0].Trim();
+            //    model.Name = item[1].Trim();
+            //    model.CostPerUnit = float.Parse(item[2]);
+            //    model.AvailableQty = int.Parse(item[3]);
+            //    inventoryModel.Add(model);
+            //    linea = strmReader.ReadLine();
+            //}
+            //strmReader.Close();
 
             //Adding a new item to inventory
             InventoryModel modelEdited = new InventoryModel();

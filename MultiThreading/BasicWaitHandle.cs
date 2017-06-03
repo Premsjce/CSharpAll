@@ -7,19 +7,22 @@ using System.Threading.Tasks;
 
 namespace MultiThreading
 {
+    /// <summary>
+    /// Basic Wait Handle
+    /// </summary>
     class BasicWaitHandle
     {
         private static EventWaitHandle _waitHandle = new AutoResetEvent(false);
 
-        static void Main(string[] args)
+        static void MainEventWaitHandle(string[] args)
         {
             Thread worker = new Thread(new ThreadStart(Waiter));
             worker.Start();
             Thread.Sleep(2000);
             _waitHandle.Set();
 
-            //string s = "Temp String";
-            //Invoke(s);
+            string s = "Temp String";
+            Invoke(s);
         }
 
         private static void Invoke(object s)
@@ -29,7 +32,7 @@ namespace MultiThreading
 
         private static void Invoke<T>(params T[] par)
         {
-            Console.WriteLine("Genenric mehtios invoked");
+            Console.WriteLine("Genenric mehtods invoked");
         }
 
         static void Waiter()

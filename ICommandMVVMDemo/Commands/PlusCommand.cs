@@ -15,7 +15,7 @@ namespace ICommandMVVMDemo.Commands
         {
             this.viewmodel = viewmod;
         }
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler CanExecuteChanged =  delegate{ };
 
         public bool CanExecute(object parameter)
         {

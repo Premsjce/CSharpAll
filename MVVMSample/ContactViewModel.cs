@@ -9,6 +9,9 @@ using System.Windows.Controls;
 
 namespace MVVMSample
 {
+    /// <summary>
+    /// ViewModel Class for ContactView
+    /// </summary>
     public class ContactViewModel
     {
         Button btn = new Button();

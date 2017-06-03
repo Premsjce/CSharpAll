@@ -29,7 +29,8 @@ namespace TaskParallelLibraryDemo
 
 
             //Option 3
-            //Craete a Task that return List<int> using Task.Factory
+            //Craete a Task that return List<int> using Task.Factory, 
+            //Task Factory will create the task and will start the task immediately after creation
             Task<List<int>> taskWithFactoryAndState = Task.Factory.StartNew((stateObj) => 
             {
                 List<int> listInt = new List<int>();
@@ -61,24 +62,24 @@ namespace TaskParallelLibraryDemo
 
 
             //Collect all the result from all 3 task and subsequectly print them
-
             var taskWithInLineActionResult = taskWithInLineAction.Result;
             var taskWithActualMethodStateResult = taskWithActualMethodState.Result;
             var taskWithFactoryAndStateResult = taskWithFactoryAndState.Result;
 
-            Console.WriteLine(string.Format("The Task with Inline Action<T> "+ "returned a type of {0}, with {1} items",taskWithInLineActionResult.GetType(), taskWithInLineActionResult.Count));
+            //Disposing the task once the operation is complete
+            Console.WriteLine(string.Format("The Task with Inline Action<T> "+ "returned a type of {0}, with {1} items",
+                taskWithInLineActionResult.GetType(), 
+                taskWithInLineActionResult.Count));
             taskWithInLineAction.Dispose();
 
-            Console.WriteLine(string.Format("The Task with Method call " + "returned a type of {0}", taskWithActualMethodStateResult.GetType()));
+            Console.WriteLine(string.Format("The Task with Method call " + "returned a type of {0}", 
+                taskWithActualMethodStateResult.GetType()));
             taskWithActualMethodState.Dispose();
 
-            Console.WriteLine(string.Format("The Task with Tast.Factory.StarNew<list<int>> " + "returned a type of {0}, with {1} items", taskWithFactoryAndStateResult.GetType(), taskWithFactoryAndStateResult.Count));
+            Console.WriteLine(string.Format("The Task with Tast.Factory.StarNew<list<int>> " + "returned a type of {0}, with {1} items", 
+                taskWithFactoryAndStateResult.GetType(), 
+                taskWithFactoryAndStateResult.Count));
             taskWithFactoryAndState.Dispose();
-
-
-
-
-
 
         }
 

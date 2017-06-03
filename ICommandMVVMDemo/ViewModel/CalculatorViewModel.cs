@@ -11,9 +11,8 @@ namespace ICommandMVVMDemo.ViewModel
 {
     public class CalculatorViewModel : BaseViewModel
     {
-        CalculatorModel model;
 
-
+        #region Constructo(s)
         public CalculatorViewModel()
         {
             plusCommand = new PlusCommand(this);
@@ -22,8 +21,10 @@ namespace ICommandMVVMDemo.ViewModel
             secondInput = model.SecondNumber;
             output = model.OutputNumber;
         }
+        #endregion
 
-        private int firstInput;    
+        #region Propertie(s)
+
         public int FirstInput
         {
             get
@@ -36,8 +37,6 @@ namespace ICommandMVVMDemo.ViewModel
                 OnPropertychanged("FirstInput");
             }
         }
-
-        private int secondInput;
 
         public int SecondInput
         {
@@ -52,9 +51,6 @@ namespace ICommandMVVMDemo.ViewModel
             }
         }
 
-        private int output;
-        
-
         public int Output
         {
             get
@@ -67,6 +63,17 @@ namespace ICommandMVVMDemo.ViewModel
                 OnPropertychanged("Output");
             }
         }
+        #endregion
+
+        #region Field(s)
+        private CalculatorModel model;
+        private int firstInput;
+        private int secondInput;
+        private int output;
+        private ICommand plusCommand;
+        #endregion
+
+        #region Private Method(s)
 
         public void AddMethod()
         {
@@ -84,7 +91,9 @@ namespace ICommandMVVMDemo.ViewModel
         {
             Output = firstInput / secondInput;
         }
-
+        #endregion
+        
+        #region Command(s)
 
         public ICommand AddCommand
         {
@@ -118,8 +127,6 @@ namespace ICommandMVVMDemo.ViewModel
             }
         }
 
-        private ICommand plusCommand;
-
         public ICommand AddSpecificCommand
         {
             get
@@ -127,5 +134,6 @@ namespace ICommandMVVMDemo.ViewModel
                 return plusCommand;
             }
         }
+        #endregion
     }
 }

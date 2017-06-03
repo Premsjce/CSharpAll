@@ -15,14 +15,14 @@ namespace ZZScratchWPFApp
         public MainWindow()
         {
             InitializeComponent();
-            Button btn = new Button();
-            btn.Height = 20;
-            btn.Width = 100;
-            btn.Content = "Dynamic";
-            btn.Background = Brushes.Teal;
-            StckPanel.Children.Add(btn);
-            btn.Click += Btn_Click;
-            btn.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
+            //Button btn = new Button();
+            //btn.Height = 20;
+            //btn.Width = 100;
+            //btn.Content = "Dynamic";
+            //btn.Background = Brushes.Teal;
+            //StckPanel.Children.Add(btn);
+            //btn.Click += Btn_Click;
+            //btn.RaiseEvent(new RoutedEventArgs(ButtonBase.ClickEvent));
         }
 
 

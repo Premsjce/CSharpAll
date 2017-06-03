@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding CurrentContact}">
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -15,7 +15,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+        </Grid.ColumnDefinitions>-->
 
         <!--<TextBlock Grid.Row="0" Grid.Column="0" Text="Name" HorizontalAlignment="Right" Margin="5"/>
         <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding FullName}" HorizontalAlignment="Right" Margin="5"/>
@@ -24,9 +24,9 @@
         <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding PhoneNumber}" HorizontalAlignment="Right" Margin="5"/>-->
 
         <local:ContactView x:Name="ContactViewControlColumn1" Loaded="ContactViewControl_Loaded" Grid.Row="0" Grid.Column="0"/>
-        <local:ContactView x:Name="ContactViewControlColumn2" Loaded="ContactViewControl_Loaded" Grid.Row="0" Grid.Column="1"/>
+        <!--<local:ContactView x:Name="ContactViewControlColumn2" Loaded="ContactViewControl_Loaded" Grid.Row="0" Grid.Column="1"/>-->
 
-        <Button Grid.Column="1" Grid.Row="1" Height="20" Width="180" Click="Button_Click">
+        <!--<Button Grid.Column="1" Grid.Row="1" Height="20" Width="180" Click="Button_Click">
             <Button.Content>
                 <WrapPanel>
                     <TextBlock Text="Red" Foreground="Teal" Margin="0 0 10 0"/>
@@ -34,6 +34,6 @@
                     <TextBlock Text="Button" Margin="0 0 10 0"/>
                 </WrapPanel>
             </Button.Content>
-        </Button>
+        </Button>-->
     </Grid>
 </Window>

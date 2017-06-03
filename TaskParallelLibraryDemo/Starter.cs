@@ -48,7 +48,7 @@ namespace TaskParallelLibraryDemo
             }
 
             WaitHandle.WaitAll((from x in mres select x.WaitHandle).ToArray());
-
+            
             threadTime = watch.ElapsedMilliseconds;
             watch.Reset();
 
