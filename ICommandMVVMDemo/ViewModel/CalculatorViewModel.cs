@@ -2,6 +2,7 @@
 using ICommandMVVMDemo.Model;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,11 +16,13 @@ namespace ICommandMVVMDemo.ViewModel
         #region Constructo(s)
         public CalculatorViewModel()
         {
+            Trace.WriteLine("CalculatorViewMoel constructor extry");
             plusCommand = new PlusCommand(this);
             model = new CalculatorModel();
             firstInput = model.FirstNumber;
             secondInput = model.SecondNumber;
             output = model.OutputNumber;
+            Trace.WriteLine("CalculatorViewMoel constructor exit");
         }
         #endregion
 

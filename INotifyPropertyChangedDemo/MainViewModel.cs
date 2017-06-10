@@ -1,19 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
+﻿#region (C) Premz 2017
+//
+// File: MainViewModel.cs
+// Creation: June 6,2017
+// Author : Prem Kumar
+//
+// (C) Premz 2017
+//
+// All rights are reserved. Reproduction or transmission in whole or in part,in 
+// any form or by any means, electronic, mechanical or otherwise, is prohibited 
+// without the prior written permission of the copyright owner.
+#endregion
+
+#region Custom Directives
+using LibrarySample;
+#endregion
+
+#region MS Directives
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+#endregion
 
 namespace INotifyPropertyChangedDemo
 {
+    /// <summary>
+    /// View Model for MainView.xaml
+    /// </summary>
     public class MainViewModel : INotifyPropertyChanged
     {
-
+        #region Constructor
         public MainViewModel()
         {
             Intialize();
         }
+
+        #endregion
+
+        #region Private Methods
 
         private void Intialize()
         {
@@ -21,7 +42,15 @@ namespace INotifyPropertyChangedDemo
             this.checkBoxEnabled = false;
         }
 
+        #endregion
+
+        #region Fields
         private bool _checkboxstate ;
+        private bool checkBoxEnabled;
+        private BaseClass baseclass = new BaseClass();
+        #endregion
+
+        #region Properties
 
         public bool CheckBoxState
         {
@@ -32,9 +61,7 @@ namespace INotifyPropertyChangedDemo
                 RaisePropertyChanged("CheckBoxState");
             }
         }
-
-
-        private bool checkBoxEnabled;
+        
 
         public bool CheckBoxEnabled
         {
@@ -49,12 +76,19 @@ namespace INotifyPropertyChangedDemo
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        #endregion
 
-        private void RaisePropertyChanged(string propertyName)
+        #region Evnets
+        
+        public event PropertyChangedEventHandler PropertyChanged;
+        #endregion
+
+        #region Protected Methods
+        
+        protected virtual void RaisePropertyChanged(string propertyName)
         {
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));            
         }
-
+        #endregion
     }
 }

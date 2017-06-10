@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,13 +15,17 @@ namespace ICommandMVVMDemo.Commands
 
         public RelayCommand(Action action)
         {
+            Trace.WriteLine("RelayCOmmand with Action constructor enter");
             this._action = action;
+            Trace.WriteLine("RelayCOmmand with Action constructor exit");
         }
 
         public RelayCommand(Action action, Func<bool> canExcetute)
         {
+            Trace.WriteLine("RelayCOmmand with Action and Func constructor enter");
             this._action = action;
             this._canExecute = canExcetute;
+            Trace.WriteLine("RelayCOmmand with Action and func constructor exit");
         }
 
         #endregion
