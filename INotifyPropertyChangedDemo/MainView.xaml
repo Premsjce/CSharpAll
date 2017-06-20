@@ -8,9 +8,10 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <CheckBox Content="Click Me" IsChecked="{Binding Path=CheckBoxState, Mode=TwoWay}" Margin="15"/>
-            <!--<TextBlock Text="{Binding Path=CheckBoxState, Mode=TwoWay}" />-->
-            <CheckBox Content="Don't Click Me" IsEnabled="{Binding Path=CheckBoxEnabled, Mode=TwoWay}" Margin="15"/>
+            <CheckBox Content="CheckBoxState" 
+                      IsChecked="{Binding Path=CheckBoxState}" Margin="15"/>
+            <CheckBox Content="CheckBoxEnabled" 
+                      IsEnabled="{Binding Path=CheckBoxEnabled}" Margin="15"/>
         </StackPanel>
     </Grid>
 </Window>

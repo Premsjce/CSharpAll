@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using ZZScratchConsoleApp;
 
 namespace ScratchConsoleApp
 {
@@ -21,6 +22,11 @@ namespace ScratchConsoleApp
 
         static void Main()
         {
+            #region Decimal Degree Converter
+            LattitudeToDecimalDegrees decimalConverter = new LattitudeToDecimalDegrees();
+            Console.WriteLine(decimalConverter.ConvertDMSToDecimal("75:30:16", 6));
+            #endregion
+
             #region Checking collections and Generics
             IList<int> list = new List<int>();
             list.Add(100);

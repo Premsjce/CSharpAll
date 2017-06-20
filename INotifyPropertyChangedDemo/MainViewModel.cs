@@ -39,14 +39,14 @@ namespace INotifyPropertyChangedDemo
         private void Intialize()
         {
             this._checkboxstate = false;
-            this.checkBoxEnabled = false;
+            this._checkBoxEnabled = false;
         }
 
         #endregion
 
         #region Fields
         private bool _checkboxstate ;
-        private bool checkBoxEnabled;
+        private bool _checkBoxEnabled;
         private BaseClass baseclass = new BaseClass();
         #endregion
 
@@ -54,10 +54,14 @@ namespace INotifyPropertyChangedDemo
 
         public bool CheckBoxState
         {
+            get
+            {
+                CheckBoxEnabled = _checkboxstate;
+                return _checkboxstate;
+            }
             set
             {
                 _checkboxstate = value;
-                CheckBoxEnabled = value;
                 RaisePropertyChanged("CheckBoxState");
             }
         }
@@ -67,11 +71,11 @@ namespace INotifyPropertyChangedDemo
         {
             get
             {
-                return checkBoxEnabled;
+                return _checkBoxEnabled;
             }
             set
             {
-                checkBoxEnabled = value;
+                _checkBoxEnabled = value;
                 RaisePropertyChanged("CheckBoxEnabled");
             }
         }

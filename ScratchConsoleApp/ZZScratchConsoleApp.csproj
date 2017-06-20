@@ -47,6 +47,7 @@
     <Compile Include="AnonymousTypes.cs" />
     <Compile Include="DerrivedClassFromDifferentAssembly.cs" />
     <Compile Include="ExceptionConsolidated.cs" />
+    <Compile Include="LattitudeToDecimalDegrees.cs" />
     <Compile Include="LINQSample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

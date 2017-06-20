@@ -44,6 +44,12 @@ namespace ZZScratchWPFApp
             sb.Append("\n Employee Age :" + emp.Age);
             sb.Append("\n Employee Title :" + emp.Title);
             MessageBox.Show(sb.ToString());
+
+            ServiceReference1.Service1Client age = new ServiceReference1.Service1Client();
+            int ageDays = age.CalculateDays(10, 04, 1990);
+            MessageBox.Show("You are " + ageDays.ToString() + " days old", "Your Age", MessageBoxButton.OK, MessageBoxImage.Information);
+
+
         }
     }
 }

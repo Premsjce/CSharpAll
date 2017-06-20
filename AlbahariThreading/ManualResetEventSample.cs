@@ -18,16 +18,15 @@ namespace AlbahariThreading
             _workerThread1.Start();
             _workerThread2.Start();
 
-            Thread.Sleep(1000);
-            _waitHandle.Reset();
-
             Thread.Sleep(2000);
-            _waitHandle.Set();
-
+            
         }
 
         static void HelperMethod1()
         {
+            //When the Handle is reset then There will be no reciever 
+            _waitHandle.Reset();
+
             Console.WriteLine("In helper Methid 1.. Waiitng");
             _waitHandle.WaitOne();
             Thread.Sleep(2000);
@@ -39,9 +38,13 @@ namespace AlbahariThreading
         static void HelperMethod2()
         {
             Console.WriteLine("In helper Methid 2.. Waiting");
-            _waitHandle.WaitOne();
+            //_waitHandle.WaitOne();
             Thread.Sleep(2000);
+            //Manual reset event from only one set can trigger mulitple waithandles which are waiting for signals
+            _waitHandle.Set();
             Console.WriteLine("In helper Methid 2.. Waiting finsihed");
+            
+
         }
     }
 }
