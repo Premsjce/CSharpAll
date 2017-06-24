@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Interview
@@ -10,6 +12,9 @@ namespace Interview
     {
         static void Main(string[] args)
         {
+            #region Private Memer(s)
+            Stopwatch stopWatch = new Stopwatch();
+            #endregion
             #region Find Duplicate in Given string
             string inputDuplicate = "TEMPasdTEMPTEMPasdTEMPTEMPasdTEMP";
             DuplicateAlphabets duplicateAlphabets = new DuplicateAlphabets(inputDuplicate);
@@ -19,9 +24,19 @@ namespace Interview
 
             #region Find the Palindrome in given String
 
-            string inputPalindrome = "1234xyzyx49654";
+            string inputPalindrome = "1234xyzyx496569445544xyzyx1234xyzyx496569445544xyzyx1234xyzyx496569445544xyzyx2";
             Palindrome palindrome = new Palindrome();
-            palindrome.FindPalindrome(inputPalindrome);
+
+            stopWatch.Restart();
+            //palindrome.FindPalindrome(inputPalindrome);
+            stopWatch.Stop();
+            //Console.WriteLine("Total time taken for Operation in  MilliSeconds : "
+                //+stopWatch.ElapsedMilliseconds.ToString());
+            #endregion
+
+            #region Fibonacci
+            Fibonacci fibonacci = new Fibonacci();
+            fibonacci.FindFibonacciTotal(13);
             #endregion
         }
     }

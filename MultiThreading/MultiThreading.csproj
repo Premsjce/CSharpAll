@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,10 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BacgroundWorkerDemo.cs" />
     <Compile Include="BasicWaitHandle.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScientificCalculator.cs" />
     <Compile Include="SyncBetweenThreadOddEvenNumbers.cs" />
   </ItemGroup>
   <ItemGroup>

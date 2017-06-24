@@ -17,7 +17,14 @@ namespace MultiThreading
 
         static void Main(string[] args)
         {
-            #region  Using conventional Threads
+
+            #region BackgroudWroker Demo
+            BacgroundWorkerDemo bgDemo = new BacgroundWorkerDemo();
+            bgDemo.TakesCareOfTimeConsumingWork();
+            
+            #endregion
+            
+            #region  Using Conventional Threads
 
             SyncBetweenThreadOddEvenNumbers oddEvenThread = new SyncBetweenThreadOddEvenNumbers();
             oddEvenThread.PrintNumberFromDifferentThreads();
@@ -57,6 +64,7 @@ namespace MultiThreading
             Console.WriteLine("\nPress any Key to Continue");
             Console.Read();
             #endregion
+            
         }
     }
 }
