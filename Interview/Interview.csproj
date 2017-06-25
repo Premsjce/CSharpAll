@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeadLock.cs" />
     <Compile Include="DuplicateAlphabets.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="MainProgram.cs" />

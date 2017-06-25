@@ -8,13 +8,25 @@ using System.Threading.Tasks;
 
 namespace Interview
 {
-    class MainProgram
+    /// <summary>
+    /// Main Program for console application
+    /// </summary>
+    static class MainProgram
     {
         static void Main(string[] args)
         {
+
+            #region DeadLockDemo
+            DeadLock deadLock = new DeadLock();
+            deadLock.SharedResourceOne = "SharedResourceOne";
+            deadLock.SharedResourceTwo = "SharedResourceTwo";
+            deadLock.MainMethod();
+            #endregion
+
             #region Private Memer(s)
             Stopwatch stopWatch = new Stopwatch();
             #endregion
+
             #region Find Duplicate in Given string
             string inputDuplicate = "TEMPasdTEMPTEMPasdTEMPTEMPasdTEMP";
             DuplicateAlphabets duplicateAlphabets = new DuplicateAlphabets(inputDuplicate);
@@ -36,7 +48,7 @@ namespace Interview
 
             #region Fibonacci
             Fibonacci fibonacci = new Fibonacci();
-            fibonacci.FindFibonacciTotal(13);
+            //fibonacci.FindFibonacciTotal(13);
             #endregion
         }
     }

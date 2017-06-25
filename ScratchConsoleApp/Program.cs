@@ -22,6 +22,11 @@ namespace ScratchConsoleApp
 
         static void Main()
         {
+            #region Scratch
+
+
+            #endregion
+
             #region Decimal Degree Converter
             LattitudeToDecimalDegrees decimalConverter = new LattitudeToDecimalDegrees();
             Console.WriteLine(decimalConverter.ConvertDMSToDecimal("75:30:16", 6));
