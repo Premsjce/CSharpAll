@@ -40,8 +40,13 @@ namespace LibrarySample
     /// <seealso cref="LibrarySample.BaseClass" />
     public class DerriveClass : BaseClass
     {
+        /// <summary>
+        /// Samples the method from derrived class.
+        /// </summary>
         public void SampleMethodFromDerrivedClass()
         {
+            //Wihout Creating intsance of base class we can access all methods except for Private methods
+            //SamplePrivateMethod(); => cannot be accessed
             SampleProtectedMethod();
             SampleInternalMethod();
             SampleProtectedInternalMethod();
@@ -63,16 +68,22 @@ namespace LibrarySample
     /// </summary>
     public class NotADerrivedClass
     {
+        /// <summary>
+        /// Samples the method from not a derrived class.
+        /// </summary>
         public void SampleMethodFromNotADerrivedClass()
         {
 
             //Not Accessible
+            //SamplePrivateMethod();
             //SampleInternalMethod();
             //SamplePublicMethod();
+            //SampleProtectedInternalMethod();
             //SampleProtectedMetod();
 
             BaseClass bc = new BaseClass();
-            //bc.SampleProtectedMethod() => cannot be accessed
+            //bc.SamplePrivateMethod(); => cannot be accessed
+            //bc.SampleProtectedMethod(); => cannot be accessed
             bc.SampleInternalMethod();
             bc.SampleProtectedInternalMethod();
             bc.SamplePublicMethod();
@@ -84,13 +95,16 @@ namespace LibrarySample
 
             DerriveClass dc = new DerriveClass();
             dc.SampleInternalMethod();
-            dc.SampleMethodFromDerrivedClass();
             dc.SampleProtectedInternalMethod();
             dc.SamplePublicMethod();
 
+            dc.SampleMethodFromDerrivedClass();  //=> THis method is from DerrivedClass and not baseclass
 
-            //Below line will throw Error
+
+            //Below lines will throw Error
             //DerriveClass dc = new BaseClass();
+            //NotADerrivedClass notDerrived = new BaseClass();
+            //BaseClass baseClass = new NotADerrivedClass();
         }
     }
 

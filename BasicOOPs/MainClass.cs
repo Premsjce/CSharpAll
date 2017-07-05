@@ -13,6 +13,10 @@ namespace BasicOOPs
     {
         static void Main(string[] args)
         {
+            #region InheritencePrivateConstructor
+            PtivateConstructor singeleTon = PtivateConstructor.GetInstance();
+            #endregion
+
             #region String ToUpper
             //string temp = "ashdbasdblahsbdlasbd";
             //Console.WriteLine("Upper od {0} is : {1}", temp, PossibleString.ToPossiblyUpper(temp));

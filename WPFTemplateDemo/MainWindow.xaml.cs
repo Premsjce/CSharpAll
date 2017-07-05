@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DependencyPropoertyDemo
+namespace WPFTemplateDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,7 +24,5 @@ namespace DependencyPropoertyDemo
         {
             InitializeComponent();
         }
-
-
     }
 }

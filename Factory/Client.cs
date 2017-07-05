@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace AbstractFactory
 {
+    /// <summary>
+    /// Creates an instance of several derived classes => FactoryMethod Definition
+    /// </summary>
     class Client
     {
         static void Main(string[] args)

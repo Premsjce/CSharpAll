@@ -26,11 +26,12 @@ namespace DependencyPropoertyDemo
         }
 
 
+
         public string SetText
         {
             get
             {
-                return GetValue(SetTextProperty) as string;
+                return (string)GetValue(SetTextProperty);
             }
             set
             {
@@ -43,13 +44,13 @@ namespace DependencyPropoertyDemo
             DependencyProperty.Register("SetText", typeof(string), typeof(CustomUserControl), 
                 new PropertyMetadata("", new PropertyChangedCallback(OnSetTextChanged)));
 
-        private static void OnSetTextChanged(DependencyObject depObj, DependencyPropertyChangedEventArgs args)
+        private static void OnSetTextChanged(DependencyObject d,DependencyPropertyChangedEventArgs args)
         {
-            CustomUserControl custControl = depObj as CustomUserControl;
-            custControl.OnSetTextChanged(args);
+            CustomUserControl custControl = d as CustomUserControl;
+            custControl.OnSetTextChangedNonStatic(args);
         }
 
-        private void OnSetTextChanged(DependencyPropertyChangedEventArgs args)
+        private void OnSetTextChangedNonStatic(DependencyPropertyChangedEventArgs args)
         {
             tbTest.Text = args.NewValue.ToString();
         }

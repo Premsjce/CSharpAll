@@ -27,7 +27,7 @@ namespace ICommandMVVMDemo.Model
 
         #endregion
 
-        #region Unwanted Public Method(s)
+        #region Unwanted Public Method(s), Can delete if you want
         
         public int Add(int first, int second)
         {
