@@ -11,18 +11,7 @@ namespace AlbahariThreading
     {
         static ManualResetEvent _waitHandle = new ManualResetEvent(false);
 
-        static void Main(string[] args)
-        {
-            Thread _workerThread1 = new Thread(HelperMethod1);
-            Thread _workerThread2 = new Thread(HelperMethod2);
-            _workerThread1.Start();
-            _workerThread2.Start();
-
-            Thread.Sleep(2000);
-            
-        }
-
-        static void HelperMethod1()
+        public static void HelperMethod1()
         {
             //When the Handle is reset then There will be no reciever 
             _waitHandle.Reset();
@@ -35,7 +24,7 @@ namespace AlbahariThreading
 
         }
 
-        static void HelperMethod2()
+        public static void HelperMethod2()
         {
             Console.WriteLine("In helper Methid 2.. Waiting");
             //_waitHandle.WaitOne();

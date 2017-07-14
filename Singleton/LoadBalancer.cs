@@ -14,10 +14,12 @@ namespace Singleton
         public List<string> _servers = new List<string>();
         Random _random = new Random();
 
+        /// <summary>
+        /// Prevents a default instance of the <see cref="LoadBalancer"/> class from being created.
+        /// </summary>
         private LoadBalancer()
         {
             //Just to make sure object of this class should not be created
-
             _servers.Add("ServerA");
             _servers.Add("ServerB");
             _servers.Add("ServerC");

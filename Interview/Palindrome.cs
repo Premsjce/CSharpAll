@@ -100,5 +100,23 @@ namespace Interview
         #region Private Member(s)
         Dictionary<string, int> palindromeCount = new Dictionary<string, int>();
         #endregion
+
+        #region Indexer
+        public string this[int i]
+        {
+            get
+            {
+                foreach(string st in palindromeCount.Keys)
+                {
+                    if (palindromeCount[st] == i)
+                    {
+                        return st;
+                    }
+                }
+                return "No words";
+            }
+
+        }
+        #endregion
     }
 }

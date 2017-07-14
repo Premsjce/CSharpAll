@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO.Compression;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
 using ZZScratchConsoleApp;
 
 namespace ScratchConsoleApp
@@ -17,14 +12,16 @@ namespace ScratchConsoleApp
     /// </summary>
     public class Program
     {
-        
+
         #region Main Method
 
         static void Main()
         {
             #region Scratch
-
-
+            string start = @"C:\Users\310225812\Desktop\ToDelete\MasterLink\x_paper_kit_v1.2.2\__MACOSX";
+            string result = @"C:\Users\310225812\Desktop\ToDelete\MasterLink\x_paper_kit_v1.2.2\__MACOSX.zip";
+            string extractpath = @"C:\Users\310225812\Desktop\ToDelete\MasterLink\x_paper_kit_v1.2.2\__MACOSXExtracted";
+            ZipFile.CreateFromDirectory(start, result);
             #endregion
 
             #region Decimal Degree Converter
@@ -63,7 +60,7 @@ namespace ScratchConsoleApp
             #endregion
 
             #region Consolidate Excpetion Handling
-            
+
             ExceptionConsolidated.CheckException();
             #endregion
 
@@ -76,7 +73,7 @@ namespace ScratchConsoleApp
             p.SamplePublicMethod1();
             #endregion
 
- 
+
 
         }
         #endregion
@@ -94,7 +91,7 @@ namespace ScratchConsoleApp
         #endregion
 
         #region Public Methods
-        
+
         public void SamplePublicMethod1()
         {
             SamplePublicMethod2();

@@ -26,8 +26,15 @@ namespace AlbahariThreading
 
             Console.WriteLine("Press Enter in next 5 second to abort the operation");
             Console.ReadLine();
-            if (_bgWorker.IsBusy) _bgWorker.CancelAsync();
+            if (_bgWorker.IsBusy)
+            {
+                _bgWorker.CancelAsync();
+            }
             Console.ReadLine();
+
+            _bgWorker.DoWork -= _bgWorker_DoWork;
+            _bgWorker.ProgressChanged -= _bgWorker_ProgressChanged;
+            _bgWorker.RunWorkerCompleted -= _bgWorker_RunWorkerCompleted;
         }
 
         static void _bgWorker_DoWork(object sender, DoWorkEventArgs e)

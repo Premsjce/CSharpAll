@@ -9,7 +9,7 @@ namespace DependencyInjectionDemo
     /// <summary>
     /// Singleton Logger Class
     /// </summary>
-    public class Logger
+    public class Logger : ILogger
     {
         public readonly static object lockObject = new object();
         private volatile static Logger _Instance;
@@ -21,7 +21,7 @@ namespace DependencyInjectionDemo
             loggerObject = loggrType;
         }
 
-        public static Logger InstanceCreation(ILogger loggrType)
+        public static ILogger InstanceCreation(ILogger loggrType)
         {
             if (_Instance == null)
             {
